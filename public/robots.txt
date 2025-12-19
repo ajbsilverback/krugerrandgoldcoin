@@ -1,0 +1,6 @@
+# https://www.americanbuffalogoldcoin.com robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.americanbuffalogoldcoin.com/sitemap.xml

@@ -1,0 +1,63 @@
+# AmericanBuffaloGoldCoin.com - LLMs.txt
+
+> An independent educational resource about American Gold Buffalo coins
+
+## Site Overview
+
+AmericanBuffaloGoldCoin.com provides educational content about American Gold Buffalo coins—America's first 24-karat gold bullion coin minted by the U.S. Mint with .9999 fine purity.
+
+## What This Site Is
+
+- Independent educational resource
+- Information about American Gold Buffalo coins
+- Live gold pricing data from Monex API
+- Educational articles about gold coin investing
+
+## What This Site Is NOT
+
+- Not a dealer (we do not sell precious metals)
+- Not affiliated with Monex, the U.S. Mint, or any dealers
+- Not financial advisors (no investment advice)
+- No endorsements of dealers or services
+
+## Key Topics Covered
+
+- American Gold Buffalo coin specifications (.9999 fine, 1 oz, $50 face value)
+- Gold Buffalo vs Gold Eagle vs Maple Leaf comparisons
+- Premium and pricing dynamics
+- IRA eligibility for Gold Buffalo coins
+- Storage and authentication
+- Market dynamics affecting gold prices
+
+## Product Focus
+
+The American Gold Buffalo is:
+- 24-karat gold (.9999 fine purity)
+- 1 troy ounce of pure gold
+- U.S. legal tender with $50 face value
+- First minted in 2006
+- IRA-eligible
+- Features James Earle Fraser's Buffalo Nickel design
+
+## Pricing Data
+
+- Product pricing uses Monex API symbol: AB (American Buffalo)
+- Spot pricing uses Monex API symbol: GBXSPOT
+- Prices fetched fresh on page load only
+- No real-time updates or polling
+
+## Navigation
+
+- Home: /
+- Gold Prices: /live-gold-prices
+- Where to Buy: /where-to-buy
+- Resources: /resources
+- About: /about
+
+## Contact
+
+Website: https://www.americanbuffalogoldcoin.com
+
+## Disclaimer
+
+All content is for educational purposes only. Gold investments carry risks. This site does not provide financial advice. Consult qualified professionals before making investment decisions.
