@@ -9,9 +9,9 @@
  * To adapt for a different product, only change siteConfig.ts - 
  * the tokens and content remain the same.
  * 
- * For American Gold Buffalo coins:
+ * For Gold Krugerrand coins:
  * - {{CAPITAL_REQUIREMENT}} resolves to ~$2,700 (single coin price)
- * - {{CAPITAL_REQUIREMENT_RANGE}} resolves to ~$2,600–$2,800
+ * - {{CAPITAL_REQUIREMENT_RANGE}} resolves to ~$2,600-$2,800
  */
 
 import { ProductSpotSummary } from "./monexSpot";

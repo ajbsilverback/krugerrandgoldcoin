@@ -1,49 +1,49 @@
 import { NextResponse } from "next/server";
 
-const llmsTxt = `# AmericanBuffaloGoldCoin.com - LLMs.txt
+const llmsTxt = `# KrugerrandGoldCoin.com - LLMs.txt
 
-> An independent educational resource about American Gold Buffalo coins
+> An independent educational resource about Gold Krugerrand coins
 
 ## Site Overview
 
-AmericanBuffaloGoldCoin.com provides educational content about American Gold Buffalo coins, America's first 24-karat gold bullion coin minted by the U.S. Mint with .9999 fine purity.
+KrugerrandGoldCoin.com provides educational content about Gold Krugerrand coins, the world's first modern gold bullion coin, minted by the South African Mint since 1967 with .9167 fine purity (22-karat).
 
 ## What This Site Is
 
 - Independent educational resource
-- Information about American Gold Buffalo coins
+- Information about Gold Krugerrand coins
 - Live gold pricing data from Monex API
 - Educational articles about gold coin investing
 
 ## What This Site Is NOT
 
 - Not a dealer (we do not sell precious metals)
-- Not affiliated with Monex, the U.S. Mint, or any dealers
+- Not affiliated with Monex, the South African Mint, or any dealers
 - Not financial advisors (no investment advice)
 - No endorsements of dealers or services
 
 ## Key Topics Covered
 
-- American Gold Buffalo coin specifications (.9999 fine, 1 oz, $50 face value)
-- Gold Buffalo vs Gold Eagle vs Maple Leaf comparisons
+- Gold Krugerrand coin specifications (.9167 fine, 1 oz gold content)
+- Krugerrand vs Gold Eagle vs Maple Leaf comparisons
 - Premium and pricing dynamics
-- IRA eligibility for Gold Buffalo coins
+- IRA eligibility for Krugerrand coins
 - Storage and authentication
 - Market dynamics affecting gold prices
 
 ## Product Focus
 
-The American Gold Buffalo is:
-- 24-karat gold (.9999 fine purity)
-- 1 troy ounce of pure gold
-- U.S. legal tender with $50 face value
-- First minted in 2006
+The Gold Krugerrand is:
+- 22-karat gold (.9167 fine purity)
+- 1 troy ounce of pure gold content
+- Total weight 1.0909 oz (33.93g) due to copper alloy
+- First minted in 1967
 - IRA-eligible
-- Features James Earle Fraser's Buffalo Nickel design
+- Features Paul Kruger on obverse, Springbok antelope on reverse
 
 ## Pricing Data
 
-- Product pricing uses Monex API symbol: AB (American Buffalo)
+- Product pricing uses Monex API symbol: KR (Gold Krugerrand)
 - Spot pricing uses Monex API symbol: GBXSPOT
 - Prices fetched fresh on page load only
 - No real-time updates or polling
@@ -60,7 +60,7 @@ The American Gold Buffalo is:
 
 ## Contact
 
-Website: https://www.americanbuffalogoldcoin.com
+Website: https://www.krugerrandgoldcoin.com
 
 ## Disclaimer
 

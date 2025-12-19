@@ -1,23 +1,23 @@
-# AmericanBuffaloGoldCoin.com
+# KrugerrandGoldCoin.com
 
-An educational microsite about 1 oz American Gold Buffalo coins built with Next.js 15, TypeScript, and Tailwind CSS.
+An educational microsite about 1 oz Gold Krugerrand coins built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- **Home Page**: Comprehensive overview of American Gold Buffalo coins, including benefits, who buys them, key specifications, and coin comparisons
-- **Gold Prices Page**: Live gold pricing with AB (American Buffalo) and GBXSPOT data, plus educational content about premiums
+- **Home Page**: Comprehensive overview of Gold Krugerrand coins, including benefits, who buys them, key specifications, and coin comparisons
+- **Gold Prices Page**: Live gold pricing with KR (Gold Krugerrand) and GBXSPOT data, plus educational content about premiums
 - **Coin Specs Page**: Technical specifications, purity details, IRA eligibility, and premium drivers with FAQ
-- **Design & History Page**: James Earle Fraser's design origins, obverse/reverse themes, and cultural backdrop
+- **Design & History Page**: Otto Schultz's design origins, obverse/reverse themes, and South African heritage
 - **Resources**: 12 in-depth educational articles covering:
-  - Understanding Gold Buffalo Premiums
-  - Coin Comparison (Buffalo vs Eagle vs Maple Leaf)
+  - Understanding Gold Krugerrand Premiums
+  - Coin Comparison (Krugerrand vs Eagle vs Maple Leaf)
   - Storage Options for Gold Coins
-  - Mint & Design Differences
+  - Purity Advantages (.9167 Fine)
   - Liquidity Considerations
   - Market Dynamics
   - Bid-Ask Spreads
   - Authentication Guide
-  - Institutional vs Retail Markets
+  - IRA Eligibility
   - Portfolio Allocation
   - First-Time Buyer's Guide
   - Tax Considerations
@@ -71,11 +71,11 @@ src/
 ├── components/
 │   ├── Header.tsx
 │   ├── Footer.tsx
-│   ├── LiveGoldSpotCard.tsx        # American Buffalo price card
+│   ├── LiveGoldSpotCard.tsx        # Gold Krugerrand price card
 │   ├── LiveGoldSpotIndexCard.tsx  # Gold spot index card
 │   └── MonexWidgets.tsx
 ├── lib/
-│   ├── siteConfig.ts       # ⭐ SINGLE SOURCE OF TRUTH
+│   ├── siteConfig.ts       # SINGLE SOURCE OF TRUTH
 │   └── monexSpot.ts        # Pricing API utilities
 └── data/
     ├── resources.ts        # Resource metadata
@@ -87,11 +87,11 @@ src/
 
 This site uses the Monex API for pricing data:
 
-- **Product Symbol**: AB (American Gold Buffalo)
+- **Product Symbol**: KR (Gold Krugerrand)
 - **Spot Symbol**: GBXSPOT (Gold spot index)
 
 API endpoints:
-- `https://api.monex.com/api/v2/Metals/spot/summary?metals=AB`
+- `https://api.monex.com/api/v2/Metals/spot/summary?metals=KR`
 - `https://api.monex.com/api/v2/Metals/spot/summary?metals=GBXSPOT`
 
 Prices are fetched once per page load (no polling/intervals).

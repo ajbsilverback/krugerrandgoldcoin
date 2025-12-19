@@ -4,24 +4,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Gold Buffalo Design & History | James Earle Fraser's Iconic Design",
+  title: "Krugerrand Design & History | The World's First Gold Bullion Coin",
   description:
-    "Explore the history and design of the American Gold Buffalo coin: James Earle Fraser's iconic 1913 Buffalo Nickel design, the Native American portrait, and what the design signals to gold investors.",
+    "Explore the history and design of the Gold Krugerrand coin: Paul Kruger portrait, the Springbok antelope, and how it became the world's most recognized gold coin since 1967.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/design-history`,
   },
   openGraph: {
-    title: "Gold Buffalo Design & History | James Earle Fraser's Iconic Design",
+    title: "Krugerrand Design & History | The World's First Gold Bullion Coin",
     description:
-      "The story behind the American Gold Buffalo: James Earle Fraser's 1913 design, cultural significance, and what the iconic imagery means for modern gold investors.",
+      "The story behind the Gold Krugerrand: Paul Kruger's legacy, the Springbok symbol, and how this 1967 coin revolutionized gold investing.",
     url: `${SITE_CONFIG.domain}/design-history`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Gold Buffalo Design & History",
+    title: "Krugerrand Design & History",
     description:
-      "The story behind America's purest gold coin: James Earle Fraser's iconic 1913 design brought to 24-karat gold.",
+      "The story behind the world's first and most traded gold bullion coin, minted since 1967.",
   },
 };
 
@@ -29,9 +29,9 @@ export default function DesignHistoryPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "American Gold Buffalo Design & History",
+    name: "Gold Krugerrand Design & History",
     description:
-      "The history and design origins of the American Gold Buffalo coin, featuring James Earle Fraser's iconic 1913 Buffalo Nickel artwork.",
+      "The history and design origins of the Gold Krugerrand coin, featuring Paul Kruger and the Springbok antelope.",
     url: `${SITE_CONFIG.domain}/design-history`,
     publisher: {
       "@type": "Organization",
@@ -55,142 +55,108 @@ export default function DesignHistoryPage() {
               Design <span className="gold-text">&amp; History</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              The story behind America&apos;s most iconic gold coin, from the 1913 Buffalo Nickel to the modern .9999 fine bullion program.
+              The story behind the world&apos;s first modern gold bullion coin, from its 1967 debut to its status as the most traded gold coin in history.
             </p>
           </div>
 
-          {/* James Earle Fraser Section - Editorial Pairing: Image Left, Text Right */}
+          {/* The Birth of the Bullion Coin */}
           <section className="card p-6 md:p-8 mb-10">
-            <div className="grid md:grid-cols-12 gap-8 items-center">
-              {/* Image Column */}
-              <div className="md:col-span-4 flex justify-center items-center">
-                <div className="relative w-full max-w-[240px] aspect-[3/4]">
-                  <Image
-                    src="/James_Earle_Fraser.jpg"
-                    alt="James Earle Fraser, sculptor and coin designer"
-                    fill
-                    className="object-cover rounded-lg"
-                    sizes="(max-width: 768px) 240px, 240px"
-                  />
-                </div>
-              </div>
-              {/* Text Column */}
-              <div className="md:col-span-8">
-                <h2 className="text-2xl font-display font-semibold text-white mb-4">
-                  James Earle Fraser: The Artist Behind the Design
-                </h2>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  James Earle Fraser (1876–1953) was one of America&apos;s most celebrated sculptors. Born in Winona, Minnesota, Fraser grew up in the Dakota Territory during the final years of the American frontier, an experience that profoundly influenced his artistic vision.
-                </p>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  Fraser studied at the{" "}
-                  <a
-                    href="https://www.artic.edu/"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    className="text-bullion-gold hover:underline"
-                  >
-                    Art Institute of Chicago
-                  </a>{" "}
-                  and the{" "}
-                  <a
-                    href="https://en.wikipedia.org/wiki/%C3%89cole_des_Beaux-Arts"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    className="text-bullion-gold hover:underline"
-                  >
-                    École des Beaux-Arts
-                  </a>{" "}
-                  in Paris. He became known for monumental works including &ldquo;End of the Trail,&rdquo; a poignant sculpture depicting a weary Native American on horseback that became one of the most reproduced images in American art.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  In 1911, the U.S. Mint commissioned Fraser to design a new five-cent piece. The result, the Buffalo Nickel (also known as the Indian Head Nickel), entered circulation in 1913 and became one of the most beloved coin designs in American numismatic history.
-                </p>
-              </div>
-            </div>
+            <h2 className="text-2xl font-display font-semibold text-white mb-4">
+              The Birth of the Modern Bullion Coin
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              In 1967, the South African Mint created something revolutionary: the first gold coin designed specifically for investment rather than circulation. The Krugerrand was created to market South African gold to private investors worldwide.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Before the Krugerrand, buying gold meant dealing with bars that required assaying, or collecting numismatic coins with premiums based on rarity. The Krugerrand changed everything by offering a simple proposition: one coin equals one ounce of gold.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              The concept was so successful that it spawned an entire industry. The Canadian Maple Leaf (1979), American Gold Eagle (1986), and many others followed the template the Krugerrand established.
+            </p>
           </section>
 
-          {/* Obverse Design - Editorial Pairing: Text Left, Image Right */}
-          <section className="card p-6 md:p-8 mb-10 bg-bullion-gold/5 border-bullion-gold/30">
-            <div className="grid md:grid-cols-12 gap-8 items-center">
-              {/* Text Column */}
-              <div className="md:col-span-7 order-2 md:order-1">
-                <h2 className="text-2xl font-display font-semibold text-white mb-4">
-                  Obverse: The Native American Portrait
-                </h2>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  The obverse (front) of the Gold Buffalo features a composite portrait of a Native American in profile, facing right. Fraser stated that he used three Native American models as inspiration:
-                </p>
-                <ul className="space-y-3 text-gray-300 mb-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-bullion-gold">•</span>
-                    <span><strong className="text-white">Iron Tail</strong>, an Oglala Lakota chief who participated in Buffalo Bill&apos;s Wild West show</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-bullion-gold">•</span>
-                    <span><strong className="text-white">Two Moons</strong>, a Northern Cheyenne chief who fought at the Battle of Little Bighorn</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-bullion-gold">•</span>
-                    <span><strong className="text-white">John Big Tree</strong>, an Onondaga/Seneca actor (though some historians debate his involvement)</span>
-                  </li>
-                </ul>
-                <p className="text-gray-300 leading-relaxed">
-                  The portrait captures a dignified, timeless quality that Fraser intended as a tribute to indigenous peoples. The word &ldquo;LIBERTY&rdquo; appears above the portrait, with the year of minting below.
-                </p>
+          {/* Coin Design Cards - Consistent Layout */}
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            {/* Obverse Card */}
+            <div className="card p-6 flex flex-col bg-bullion-gold/5 border-bullion-gold/30">
+              <div className="relative w-full aspect-square mb-6 flex items-center justify-center">
+                <Image
+                  src="/gold-krugerrand-obverse.png"
+                  alt="Gold Krugerrand obverse showing Paul Kruger portrait"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
-              {/* Image Column */}
-              <div className="md:col-span-5 flex justify-center items-center order-1 md:order-2">
-                <div className="relative w-full max-w-[320px] aspect-square">
-                  <Image
-                    src="/american-gold-buffalo-obverse.png"
-                    alt="American Gold Buffalo obverse"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 320px, 320px"
-                  />
-                </div>
-              </div>
+              <h3 className="text-xl font-display font-semibold text-white mb-3">
+                Obverse: Paul Kruger
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed flex-grow">
+                Portrait of Paul Kruger (1825-1904), president of the South African Republic. Designed by Otto Schultz, first appearing on coinage in 1892.
+              </p>
             </div>
-          </section>
 
-          {/* Reverse Design - Editorial Pairing: Image Left, Text Right */}
-          <section className="card p-6 md:p-8 mb-10">
-            <div className="grid md:grid-cols-12 gap-8 items-center">
-              {/* Image Column */}
-              <div className="md:col-span-5 flex justify-center items-center">
-                <div className="relative w-full max-w-[320px] aspect-square">
-                  <Image
-                    src="/american-gold-buffalo-reverse.png"
-                    alt="American Gold Buffalo reverse"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 320px, 320px"
-                  />
-                </div>
+            {/* Reverse Card */}
+            <div className="card p-6 flex flex-col">
+              <div className="relative w-full aspect-square mb-6 flex items-center justify-center">
+                <Image
+                  src="/gold-krugerrand-reverse.png"
+                  alt="Gold Krugerrand reverse showing Springbok antelope"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
-              {/* Text Column */}
-              <div className="md:col-span-7">
-                <h2 className="text-2xl font-display font-semibold text-white mb-4">
-                  Reverse: Black Diamond the Buffalo
-                </h2>
+              <h3 className="text-xl font-display font-semibold text-white mb-3">
+                Reverse: Springbok
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed flex-grow">
+                Springbok antelope in mid-stride, designed by sculptor Coert Steynberg. South Africa&apos;s national animal symbolizing natural heritage.
+              </p>
+            </div>
+
+            {/* Designer Card */}
+            <div className="card p-6 flex flex-col">
+              <div className="relative w-full aspect-square mb-6 flex items-center justify-center">
+                <Image
+                  src="/Portrait_otto_schulz.jpg"
+                  alt="Otto Schultz, designer of the Paul Kruger portrait"
+                  fill
+                  className="object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <h3 className="text-xl font-display font-semibold text-white mb-3">
+                Otto Schultz
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed flex-grow">
+                German-born engraver who created the Paul Kruger portrait in 1892. Coert Steynberg designed the Springbok reverse for the 1967 launch.
+              </p>
+            </div>
+          </div>
+
+          {/* Detailed Design Information */}
+          <section className="card p-6 md:p-8 mb-10">
+            <h2 className="text-2xl font-display font-semibold text-white mb-4">
+              Design Details
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold text-bullion-gold mb-3">Obverse: Paul Kruger Portrait</h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  The reverse (back) features an American bison standing on a mound of earth. Fraser reportedly used &ldquo;Black Diamond,&rdquo; a bison residing at the{" "}
-                  <a
-                    href="https://centralparkzoo.com/"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    className="text-bullion-gold hover:underline"
-                  >
-                    Central Park Zoo
-                  </a>{" "}
-                  in New York City, as his primary model.
-                </p>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  The bison, often called a buffalo in American vernacular, represents the American frontier and the natural heritage of the Great Plains. The animal stands in a powerful, grounded stance that conveys strength and permanence.
+                  The obverse features Stephanus Johannes Paulus Kruger (1825-1904), who served as president of the South African Republic (Transvaal) from 1883 to 1900.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  Inscriptions include &ldquo;UNITED STATES OF AMERICA,&rdquo; &ldquo;E PLURIBUS UNUM,&rdquo; &ldquo;IN GOD WE TRUST,&rdquo; and the face value of &ldquo;$50.&rdquo; The purity &ldquo;.9999 FINE GOLD&rdquo; and weight &ldquo;1 OZ.&rdquo; also appear on the reverse.
+                  The coin&apos;s name combines &ldquo;Kruger&rdquo; with &ldquo;Rand,&rdquo; the South African currency unit (named after the Witwatersrand gold-bearing ridge).
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-bullion-gold mb-3">Reverse: Springbok Antelope</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  The reverse depicts a Springbok in mid-stride, capturing the animal&apos;s grace and energy. Steynberg was one of South Africa&apos;s most prominent sculptors.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  The reverse shows the year of minting and gold content: &ldquo;FYNGOUD 1 OZ FINE GOLD&rdquo; (in Afrikaans and English).
                 </p>
               </div>
             </div>
@@ -199,70 +165,59 @@ export default function DesignHistoryPage() {
           {/* Historical Context */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-white mb-4">
-              Cultural &amp; Historical Backdrop
+              Historical Context
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Fraser created the original Buffalo Nickel design during a period of reflection on America&apos;s westward expansion. By the early 1900s, the frontier era had ended, Native American populations had been decimated, and the American bison had been brought to the brink of extinction.
+              The Krugerrand was created during a complex period in South African history. The coin served a practical purpose: to create a legal way for private individuals worldwide to own South African gold during a time when many countries restricted private gold ownership.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              The design was Fraser&apos;s deliberate tribute to a vanishing America. He later wrote: &ldquo;My purpose was to create a coin which would be truly American, one that could not be confused with the coinage of any other country.&rdquo;
+              In the United States, private gold ownership was restricted from 1933 until 1974. When restrictions lifted, the Krugerrand was perfectly positioned. By 1980, Krugerrands accounted for 90% of the global gold coin market.
             </p>
             <div className="bg-white/5 rounded-lg p-4 mb-4">
               <p className="text-gray-300 italic">
-                &ldquo;I did not intend the Indian to represent any one individual, but rather a type that I hoped embodied the genuine American character of the original Americans.&rdquo;
+                &ldquo;The Krugerrand made gold ownership simple and accessible for ordinary investors around the world.&rdquo;
               </p>
-              <p className="text-gray-500 text-sm mt-2">— James Earle Fraser</p>
+              <p className="text-gray-500 text-sm mt-2">- Industry historians</p>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              The Buffalo Nickel circulated from 1913 to 1938, and its imagery became deeply embedded in American culture. When the U.S. Mint sought a design for its first 24-karat gold bullion coin in 2006, Fraser&apos;s century-old artwork was the natural choice.
+              During the apartheid era, many countries imposed sanctions that included the Krugerrand. After apartheid ended in 1994, the coin regained its international standing and remains one of the world&apos;s most popular gold coins.
             </p>
           </section>
 
-          {/* Modern Bullion Program */}
+          {/* Modern Production */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-white mb-4">
-              The Modern Bullion Program
+              Modern Production
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              The American Gold Buffalo was authorized by the Presidential $1 Coin Act of 2005 and first minted in 2006. It was created to compete with other .9999 fine gold coins, particularly the Canadian Gold Maple Leaf.
+              Today, Krugerrands are produced by the South African Mint in partnership with Rand Refinery, which supplies the gold. The coin is available in multiple sizes: 1 oz, 1/2 oz, 1/4 oz, and 1/10 oz.
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="text-bullion-gold font-semibold mb-2">2006 Launch</h3>
+                <h3 className="text-bullion-gold font-semibold mb-2">Over 50 Million Minted</h3>
                 <p className="text-gray-400 text-sm">
-                  First .9999 fine gold coin produced by the U.S. Mint, meeting demand for a pure 24-karat American gold coin.
+                  Since 1967, more than 50 million ounces of gold have been minted as Krugerrands, making it the most widely held gold bullion coin.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">Bullion &amp; Proof</h3>
                 <p className="text-gray-400 text-sm">
-                  Available in both bullion (investment) and proof (collector) versions, each year featuring the classic Fraser design.
+                  Available in both bullion (investment) and proof (collector) finishes, with special anniversary editions since 2017.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="text-bullion-gold font-semibold mb-2">West Point Mint</h3>
+                <h3 className="text-bullion-gold font-semibold mb-2">Silver Version Added</h3>
                 <p className="text-gray-400 text-sm">
-                  Gold Buffalos are struck at the West Point Mint in New York, one of the U.S. Mint&apos;s four production facilities.
+                  In 2017, for the 50th anniversary, the South African Mint introduced silver Krugerrands for the first time.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">Ongoing Production</h3>
                 <p className="text-gray-400 text-sm">
-                  Minted annually since 2006, the Gold Buffalo has become a cornerstone of the U.S. Mint&apos;s bullion program.
+                  The South African Mint continues annual production, maintaining the Krugerrand&apos;s availability and liquidity.
                 </p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm">
-              Learn more about the Gold Buffalo&apos;s history at{" "}
-              <a
-                href="https://www.monex.com/knowledge/historical-backdrop-gold-buffalo-coin-iconic-design/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="text-bullion-gold hover:underline"
-              >
-                Monex Knowledge Base
-              </a>
-            </p>
           </section>
 
           {/* What the Design Signals */}
@@ -275,33 +230,27 @@ export default function DesignHistoryPage() {
             </p>
             <div className="space-y-4">
               <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">American Heritage</h3>
+                <h3 className="text-white font-semibold">Proven History</h3>
                 <p className="text-gray-400 text-sm">
-                  The iconic imagery connects to over a century of American numismatic tradition. Investors recognize the design instantly, a factor that supports liquidity and trust.
-                </p>
-              </div>
-              <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">Government Authority</h3>
-                <p className="text-gray-400 text-sm">
-                  The design&apos;s official U.S. Mint provenance signals authenticity and weight/purity guarantees backed by the federal government.
-                </p>
-              </div>
-              <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">Timeless Value</h3>
-                <p className="text-gray-400 text-sm">
-                  Fraser&apos;s 1913 design has endured for over a century. Its continued use on modern bullion suggests permanence, a quality investors seek in store-of-value assets.
+                  The unchanged design since 1967 signals stability and continuity. Investors recognize a coin that has maintained its value proposition for over 50 years.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Global Recognition</h3>
                 <p className="text-gray-400 text-sm">
-                  The Buffalo design is recognized by dealers and investors worldwide, facilitating transactions across borders and markets.
+                  The Paul Kruger portrait and Springbok are instantly recognizable worldwide. This recognition supports liquidity and trust in transactions.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">Collector Crossover</h3>
+                <h3 className="text-white font-semibold">South African Gold Heritage</h3>
                 <p className="text-gray-400 text-sm">
-                  The design&apos;s artistic merit appeals to both bullion investors and numismatists, potentially broadening the buyer pool when selling.
+                  South Africa&apos;s history as a major gold producer lends credibility. The coin connects to the legendary Witwatersrand gold deposits.
+                </p>
+              </div>
+              <div className="border-l-2 border-bullion-gold/50 pl-4">
+                <h3 className="text-white font-semibold">Market Standard</h3>
+                <p className="text-gray-400 text-sm">
+                  As the original gold bullion coin, the Krugerrand established the standard others follow. Its design represents the template for the entire industry.
                 </p>
               </div>
             </div>
@@ -310,83 +259,76 @@ export default function DesignHistoryPage() {
           {/* Design Comparison */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-white mb-4">
-              Buffalo vs. Eagle: Design Philosophy
+              Krugerrand vs. Other Designs
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              The U.S. Mint produces two gold bullion coins with distinct design philosophies:
+              Different gold coins reflect different design philosophies:
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white/5 rounded-lg p-5">
-                <h3 className="text-bullion-gold font-semibold mb-3">Gold Buffalo</h3>
+                <h3 className="text-bullion-gold font-semibold mb-3">Gold Krugerrand</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>• Historical 1913 design by James Earle Fraser</li>
-                  <li>• Native American and bison imagery</li>
-                  <li>• Celebrates American frontier heritage</li>
-                  <li>• Artistic, collectible aesthetic</li>
-                  <li>• Single consistent design since 2006</li>
+                  <li>• Historic Paul Kruger portrait (1892 design)</li>
+                  <li>• Springbok national symbol</li>
+                  <li>• No face value (gold-backed legal tender)</li>
+                  <li>• Distinctive orange-gold copper alloy color</li>
+                  <li>• Unchanged design since 1967</li>
                 </ul>
               </div>
               <div className="bg-white/5 rounded-lg p-5">
-                <h3 className="text-bullion-gold font-semibold mb-3">Gold Eagle</h3>
+                <h3 className="text-bullion-gold font-semibold mb-3">American Gold Eagle</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>• Augustus Saint-Gaudens&apos; 1907 Liberty design</li>
-                  <li>• Lady Liberty and eagle family imagery</li>
-                  <li>• Symbolizes freedom and national ideals</li>
-                  <li>• Classic patriotic aesthetic</li>
+                  <li>• Saint-Gaudens&apos; 1907 Liberty design</li>
+                  <li>• Eagle family reverse imagery</li>
+                  <li>• $50 face value (U.S. legal tender)</li>
+                  <li>• Similar 22K alloy and color</li>
                   <li>• Reverse redesigned in 2021</li>
                 </ul>
               </div>
             </div>
-            <p className="text-gray-400 text-sm mt-4">
-              Compare Buffalo and Eagle coins in detail at{" "}
-              <a
-                href="https://www.monex.com/knowledge/gold-buffalo-coins-vs-american-eagle-gold-coins/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="text-bullion-gold hover:underline"
-              >
-                Monex: Buffalo vs. Eagle
-              </a>
-            </p>
           </section>
 
           {/* Timeline */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-white mb-6">
-              Key Dates in Buffalo Design History
+              Key Dates in Krugerrand History
             </h2>
             <div className="space-y-4">
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1876</div>
-                <p className="text-gray-300">James Earle Fraser born in Winona, Minnesota</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1886</div>
+                <p className="text-gray-300">Gold discovered on the Witwatersrand, launching South African gold mining</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1911</div>
-                <p className="text-gray-300">Fraser commissioned to design new five-cent coin</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1892</div>
+                <p className="text-gray-300">Paul Kruger portrait first appears on South African coins</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1913</div>
-                <p className="text-gray-300">Buffalo Nickel enters circulation</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1967</div>
+                <p className="text-gray-300">First Krugerrand minted, creating the modern gold bullion coin category</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1938</div>
-                <p className="text-gray-300">Buffalo Nickel production ends (replaced by Jefferson Nickel)</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1974</div>
+                <p className="text-gray-300">U.S. legalizes private gold ownership; Krugerrand sales surge</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1953</div>
-                <p className="text-gray-300">James Earle Fraser passes away</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1980</div>
+                <p className="text-gray-300">Krugerrands represent 90% of global gold coin market</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">2005</div>
-                <p className="text-gray-300">Presidential $1 Coin Act authorizes Gold Buffalo program</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1980</div>
+                <p className="text-gray-300">Fractional sizes (1/2, 1/4, 1/10 oz) introduced</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">2006</div>
-                <p className="text-gray-300">First American Gold Buffalo coins minted</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1994</div>
+                <p className="text-gray-300">End of apartheid restores international Krugerrand trading</p>
+              </div>
+              <div className="flex gap-4">
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">2017</div>
+                <p className="text-gray-300">50th anniversary; first silver Krugerrands minted</p>
               </div>
               <div className="flex gap-4">
                 <div className="text-bullion-gold font-bold w-20 flex-shrink-0">Today</div>
-                <p className="text-gray-300">Gold Buffalo remains U.S. Mint&apos;s premier 24-karat bullion coin</p>
+                <p className="text-gray-300">Krugerrand remains one of the world&apos;s most popular gold coins</p>
               </div>
             </div>
           </section>

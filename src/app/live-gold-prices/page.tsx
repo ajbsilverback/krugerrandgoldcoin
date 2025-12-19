@@ -10,24 +10,24 @@ import { pricesQA } from "@/data/qa-content";
 import { fetchProductSpot, fetchMetalSpotIndex, formatUSD } from "@/lib/monexSpot";
 
 export const metadata: Metadata = {
-  title: "Live American Gold Buffalo Prices & Gold Spot Price Charts",
+  title: "Live Gold Krugerrand Prices & Gold Spot Price Charts",
   description:
-    "Track live American Gold Buffalo prices and gold spot prices with interactive charts. Understand premiums, bid-ask spreads, and market dynamics for informed gold coin investing.",
+    "Track live Gold Krugerrand prices and gold spot prices with interactive charts. Understand premiums, bid-ask spreads, and market dynamics for informed gold coin investing.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/live-gold-prices`,
   },
   openGraph: {
-    title: "Live American Gold Buffalo Prices & Gold Spot Price Charts",
+    title: "Live Gold Krugerrand Prices & Gold Spot Price Charts",
     description:
-      "Track live American Gold Buffalo prices and gold spot prices with interactive charts. Understand premiums and market dynamics.",
+      "Track live Gold Krugerrand prices and gold spot prices with interactive charts. Understand premiums and market dynamics.",
     url: `${SITE_CONFIG.domain}/live-gold-prices`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Live American Gold Buffalo Prices & Gold Spot Price Charts",
+    title: "Live Gold Krugerrand Prices & Gold Spot Price Charts",
     description:
-      "Track live American Gold Buffalo prices and gold spot prices with interactive charts and market data.",
+      "Track live Gold Krugerrand prices and gold spot prices with interactive charts and market data.",
   },
 };
 
@@ -42,14 +42,14 @@ export default async function PricesPage() {
   
   // Calculate example prices based on current spot
   const eaglePrice = Math.round(spotPerOz * 1.04);  // 4% premium
-  const buffaloPrice = Math.round(spotPerOz * 1.04); // 4% premium
+  const krugerrandPrice = Math.round(spotPerOz * 1.03); // 3% premium
   
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "American Gold Buffalo Price & Live Gold Spot Prices",
+    name: "Gold Krugerrand Price & Live Gold Spot Prices",
     description:
-      "Track live American Gold Buffalo prices and gold spot prices. Real-time charts and market data for gold coin investors.",
+      "Track live Gold Krugerrand prices and gold spot prices. Real-time charts and market data for gold coin investors.",
     url: `${SITE_CONFIG.domain}/live-gold-prices`,
     publisher: {
       "@type": "Organization",
@@ -64,18 +64,18 @@ export default async function PricesPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What determines the price of an American Gold Buffalo?",
+        name: "What determines the price of a Gold Krugerrand?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The price of an American Gold Buffalo consists of the gold spot price plus a premium that covers minting, distribution, and dealer margins. Buffalo premiums typically range from 3-5% over spot.",
+          text: "The price of a Gold Krugerrand consists of the gold spot price plus a premium that covers minting, distribution, and dealer margins. Krugerrand premiums typically range from 2-4% over spot.",
         },
       },
       {
         "@type": "Question",
-        name: "Why does the Gold Buffalo have a premium over spot price?",
+        name: "Why does the Krugerrand have a premium over spot price?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The premium covers U.S. Mint production costs, Authorized Purchaser margins, dealer margins, and the value of the coin's .9999 fine purity and legal tender status. Government-minted coins carry premiums for their guaranteed authenticity and liquidity.",
+          text: "The premium covers South African Mint production costs, distribution costs, dealer margins, and reflects the coin's status as the world's most recognized gold bullion coin. Government-minted coins carry premiums for their guaranteed authenticity and liquidity.",
         },
       },
       {
@@ -90,11 +90,11 @@ export default async function PricesPage() {
   };
 
   const aiSummaryBullets = [
-    "This page displays live American Gold Buffalo prices via Monex data",
+    "This page displays live Gold Krugerrand prices via Monex data",
     "Track gold spot prices per troy ounce for reference",
-    "Understand how spot prices relate to Gold Buffalo retail pricing",
-    "Learn about premium structures: Gold Buffalo coins have 3-5% premiums",
-    "Compare Buffalo pricing to other gold bullion coins",
+    "Understand how spot prices relate to Krugerrand retail pricing",
+    "Learn about premium structures: Krugerrand coins have 2-4% premiums",
+    "Compare Krugerrand pricing to other gold bullion coins",
   ];
 
   return (
@@ -114,7 +114,7 @@ export default async function PricesPage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-              <span className="gold-text">Gold Buffalo Price</span>
+              <span className="gold-text">Krugerrand Price</span>
               <br />
               <span className="text-white">& Live Gold Spot Prices</span>
             </h1>
@@ -124,11 +124,11 @@ export default async function PricesPage() {
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mt-6 text-left">
               Track live gold prices and understand how spot pricing affects 
-              the cost of American Gold Buffalo coins. Use these tools to make 
+              the cost of Gold Krugerrand coins. Use these tools to make 
               informed decisions about your precious metals investments. Return 
               to our{" "}
               <Link href="/" className="text-bullion-gold hover:underline">
-                Gold Buffalo overview
+                Krugerrand overview
               </Link>{" "}
               or explore our{" "}
               <Link href="/resources" className="text-bullion-gold hover:underline">
@@ -142,7 +142,7 @@ export default async function PricesPage() {
       {/* Pricing Zone - Live Cards */}
       <section className="py-10 md:py-12 section-dark">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          {/* Live Gold Buffalo Price Card */}
+          {/* Live Krugerrand Price Card */}
           <LiveGoldSpotCard showCta={false} />
 
           {/* Live Gold Spot Index Card */}
@@ -160,29 +160,29 @@ export default async function PricesPage() {
         </div>
       </section>
 
-      {/* Understanding Gold Buffalo Pricing */}
+      {/* Understanding Krugerrand Pricing */}
       <section className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-6 text-center">
-              Understanding <span className="gold-text">Gold Buffalo Pricing</span>
+              Understanding <span className="gold-text">Krugerrand Pricing</span>
             </h2>
 
             <div className="prose prose-lg prose-invert max-w-none space-y-6">
               <div className="card">
                 <h3 className="text-2xl font-display font-semibold mb-4 text-bullion-gold">
-                  Spot Price vs. Gold Buffalo Price
+                  Spot Price vs. Krugerrand Price
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  When purchasing an American Gold Buffalo, you&apos;ll pay a premium 
+                  When purchasing a Gold Krugerrand, you&apos;ll pay a premium 
                   above the spot price. The spot price represents the current market 
                   rate for gold traded in bulk on commodities exchanges.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  Gold Buffalo coins typically carry <strong className="text-white">3-5% 
-                  premiums over spot</strong>, which covers U.S. Mint production costs, 
-                  Authorized Purchaser margins, dealer margins, and reflects the coin&apos;s 
-                  .9999 fine purity and legal tender status.
+                  Krugerrand coins typically carry <strong className="text-white">2-4% 
+                  premiums over spot</strong>, which covers South African Mint production costs, 
+                  distribution, and dealer margins. This is often lower than other coins 
+                  due to high Krugerrand production volumes.
                 </p>
               </div>
 
@@ -194,8 +194,8 @@ export default async function PricesPage() {
                   <li className="flex items-start">
                     <span className="text-bullion-gold mr-3">•</span>
                     <span>
-                      <strong className="text-white">Minting Costs:</strong> The U.S. Mint 
-                      uses precision manufacturing to achieve .9999 fine purity with 
+                      <strong className="text-white">Minting Costs:</strong> The South African 
+                      Mint uses precision manufacturing to achieve .9167 fine purity with 
                       exact weight specifications.
                     </span>
                   </li>
@@ -203,15 +203,15 @@ export default async function PricesPage() {
                     <span className="text-bullion-gold mr-3">•</span>
                     <span>
                       <strong className="text-white">Distribution Chain:</strong> Coins 
-                      flow from the Mint to Authorized Purchasers to dealers, each adding 
+                      flow from the Mint to distributors to dealers, each adding 
                       margin for their services.
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-bullion-gold mr-3">•</span>
                     <span>
-                      <strong className="text-white">Government Guarantee:</strong> Legal 
-                      tender status and government backing provide authenticity assurance 
+                      <strong className="text-white">Government Guarantee:</strong> Sovereign 
+                      mint origin and legal tender status provide authenticity assurance 
                       that commands value.
                     </span>
                   </li>
@@ -219,7 +219,7 @@ export default async function PricesPage() {
                     <span className="text-bullion-gold mr-3">•</span>
                     <span>
                       <strong className="text-white">Strong Liquidity:</strong> Recognized 
-                      worldwide, Gold Buffalos are easy to sell, which supports their 
+                      worldwide, Krugerrands are easy to sell, which supports their 
                       pricing power.
                     </span>
                   </li>
@@ -228,22 +228,22 @@ export default async function PricesPage() {
 
               <div className="card">
                 <h3 className="text-xl md:text-2xl font-display font-semibold mb-4 text-bullion-gold">
-                  Premium Comparison: Buffalo vs. Other Coins
+                  Premium Comparison: Krugerrand vs. Other Coins
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-3">
-                  American Gold Buffalo premiums are comparable to other major gold 
-                  bullion coins:
+                  Krugerrand premiums are often among the lowest for major government 
+                  gold bullion coins:
                 </p>
                 <div className="bg-bullion-darker/50 rounded-lg p-4">
                   <p className="text-gray-400 text-sm mb-2">
                     <strong className="text-bullion-gold">Example at {formatSpotPrice(spotPerOz)}/oz spot:</strong>
                   </p>
                   <ul className="text-gray-400 text-sm space-y-2">
-                    <li>• <strong className="text-white">Gold Buffalo (~4% premium):</strong> ~{formatSpotPrice(buffaloPrice)}</li>
+                    <li>• <strong className="text-white">Krugerrand (~3% premium):</strong> ~{formatSpotPrice(krugerrandPrice)}</li>
                     <li>• <strong className="text-white">Gold Eagle (~4% premium):</strong> ~{formatSpotPrice(eaglePrice)}</li>
                     <li>• <strong className="text-white">Canadian Maple (~3% premium):</strong> ~{formatSpotPrice(Math.round(spotPerOz * 1.03))}</li>
                     <li className="pt-2 border-t border-bullion-gold/20">
-                      <strong className="text-bullion-gold">Buffalo advantage:</strong> .9999 purity at similar premium to .9167 fine Gold Eagle
+                      <strong className="text-bullion-gold">Krugerrand advantage:</strong> Often lower premiums due to high production volumes
                     </li>
                   </ul>
                 </div>
@@ -263,12 +263,12 @@ export default async function PricesPage() {
             For detailed market analysis and pricing information:
           </p>
           <a
-            href="https://www.monex.com/gold-american-buffalo-price-charts/"
+            href="https://www.monex.com/gold-south-african-krugerrand-price-charts/"
             target="_blank"
             rel="nofollow noopener noreferrer"
             className="inline-flex items-center text-bullion-gold hover:text-bullion-goldLight transition-colors"
           >
-            <span>Research Gold Buffalo prices at Monex</span>
+            <span>Research Krugerrand prices at Monex</span>
             <svg
               className="w-4 h-4 ml-2"
               fill="none"
@@ -290,16 +290,16 @@ export default async function PricesPage() {
       <section className="py-12 md:py-16 section-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
-            Gold Buffalo Resources
+            Krugerrand Resources
           </h2>
           <p className="text-gray-400 mb-6">
             Explore our comprehensive{" "}
             <Link href="/resources" className="text-bullion-gold hover:underline">
               educational resources
             </Link>{" "}
-            to deepen your understanding of Gold Buffalo investing, or return to our{" "}
+            to deepen your understanding of Krugerrand investing, or return to our{" "}
             <Link href="/" className="text-bullion-gold hover:underline">
-              American Gold Buffalo overview
+              Gold Krugerrand overview
             </Link>.
           </p>
           <Link href="/resources" className="btn-primary">

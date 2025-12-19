@@ -3,75 +3,75 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "American Gold Buffalo Coin Specifications | Technical Details & Investor Facts",
+  title: "Gold Krugerrand Coin Specifications | Technical Details & Investor Facts",
   description:
-    "Complete technical specifications for the 1 oz American Gold Buffalo coin: .9999 fine purity, weight, dimensions, legal tender status, IRA eligibility, and premium factors.",
+    "Complete technical specifications for the 1 oz Gold Krugerrand coin: .9167 fine purity, weight, dimensions, IRA eligibility, and premium factors.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/coin-specs`,
   },
   openGraph: {
-    title: "American Gold Buffalo Coin Specifications | Technical Details",
+    title: "Gold Krugerrand Coin Specifications | Technical Details",
     description:
-      "Complete technical specifications for the 1 oz American Gold Buffalo: .9999 purity, 1 troy oz weight, U.S. Mint legal tender status, and IRA eligibility.",
+      "Complete technical specifications for the 1 oz Gold Krugerrand: .9167 purity, 1 troy oz gold content, South African Mint origin, and IRA eligibility.",
     url: `${SITE_CONFIG.domain}/coin-specs`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "American Gold Buffalo Coin Specifications",
+    title: "Gold Krugerrand Coin Specifications",
     description:
-      "Complete technical specifications for the 1 oz American Gold Buffalo: .9999 purity, 1 troy oz weight, and IRA eligibility.",
+      "Complete technical specifications for the 1 oz Gold Krugerrand: .9167 purity, 1 troy oz gold content, and IRA eligibility.",
   },
 };
 
 const specsData = [
-  { label: "Purity", value: ".9999 fine gold (24-karat)", highlight: true },
+  { label: "Purity", value: ".9167 fine gold (22-karat)", highlight: true },
   { label: "Gold Content", value: "1.0000 troy ounce (31.1035 grams)" },
-  { label: "Gross Weight", value: "1.0001 troy ounce (31.1080 grams)" },
-  { label: "Diameter", value: "32.70 mm (1.287 inches)" },
-  { label: "Thickness", value: "2.95 mm (0.116 inches)" },
-  { label: "Face Value", value: "$50 USD (legal tender)" },
-  { label: "Mint", value: "United States Mint" },
-  { label: "First Minted", value: "2006" },
-  { label: "Edge", value: "Reeded" },
+  { label: "Gross Weight", value: "1.0909 troy ounces (33.93 grams)" },
+  { label: "Diameter", value: "32.77 mm (1.29 inches)" },
+  { label: "Thickness", value: "2.84 mm (0.112 inches)" },
+  { label: "Face Value", value: "None (legal tender based on gold content)" },
+  { label: "Mint", value: "South African Mint" },
+  { label: "First Minted", value: "1967" },
+  { label: "Edge", value: "Reeded (160 serrations)" },
   { label: "IRA Eligible", value: "Yes", highlight: true },
 ];
 
 const faqData = [
   {
-    question: "What is the purity of the American Gold Buffalo?",
+    question: "What is the purity of the Gold Krugerrand?",
     answer:
-      "The American Gold Buffalo is .9999 fine gold, meaning it contains 99.99% pure gold (24-karat). This makes it the purest gold coin produced by the U.S. Mint and one of the purest gold bullion coins available worldwide.",
+      "The Gold Krugerrand is .9167 fine gold, meaning it is 22-karat gold alloyed with copper. This alloy makes the coin more durable and scratch-resistant than pure 24-karat coins while still containing exactly 1 troy ounce of pure gold.",
   },
   {
-    question: "How much gold is in a 1 oz Gold Buffalo?",
+    question: "How much gold is in a 1 oz Krugerrand?",
     answer:
-      "Each 1 oz American Gold Buffalo contains exactly 1.0000 troy ounce (31.1035 grams) of pure gold. Because of the .9999 purity, virtually all of the coin's weight is gold content.",
+      "Each 1 oz Gold Krugerrand contains exactly 1.0000 troy ounce (31.1035 grams) of pure gold. The coin weighs 1.0909 troy ounces (33.93 grams) total because the copper alloy adds additional weight.",
   },
   {
-    question: "Is the Gold Buffalo legal tender?",
+    question: "Does the Krugerrand have a face value?",
     answer:
-      "Yes, the American Gold Buffalo carries a $50 face value and is official U.S. legal tender, backed by the United States government. However, its gold content is worth significantly more than the face value.",
+      "Unlike most modern gold coins, the Krugerrand does not have a face value printed on it. It is legal tender in South Africa, with its value based directly on its gold content. This was intentional to allow the coin's value to fluctuate with gold prices.",
   },
   {
-    question: "Can I hold Gold Buffalo coins in an IRA?",
+    question: "Can I hold Krugerrand coins in an IRA?",
     answer:
-      "Yes, American Gold Buffalo coins meet IRS requirements for inclusion in a Precious Metals IRA (also called a Gold IRA). The .9999 purity exceeds the IRS minimum fineness requirement of .995 for gold. You'll need a qualified custodian and approved depository to hold IRA-owned coins.",
+      "Yes, Gold Krugerrand coins meet IRS requirements for inclusion in a Precious Metals IRA. The .9167 purity meets the IRS minimum fineness requirement of .995 for gold because Krugerrands are specifically listed as acceptable IRA investments. You'll need a qualified custodian and approved depository to hold IRA-owned coins.",
   },
   {
-    question: "Why does the Gold Buffalo have a premium over spot price?",
+    question: "Why does the Krugerrand have a premium over spot price?",
     answer:
-      "Premiums reflect minting costs, dealer margins, and supply/demand dynamics. The Gold Buffalo's premium accounts for U.S. Mint production costs, distribution, the coin's legal tender status, and its recognition as a trusted government-minted product. Premiums vary based on market conditions.",
+      "Premiums reflect minting costs, dealer margins, and supply/demand dynamics. The Krugerrand's premium accounts for South African Mint production costs, distribution, and its status as the world's most recognized gold bullion coin. Premiums vary based on market conditions.",
   },
   {
-    question: "How does the Gold Buffalo compare to the Gold Eagle in purity?",
+    question: "How does the Krugerrand compare to the Gold Eagle in purity?",
     answer:
-      "The Gold Buffalo is .9999 fine (24-karat pure gold), while the Gold Eagle is .9167 fine (22-karat). Both coins contain 1 troy ounce of gold, but the Eagle is alloyed with copper and silver for durability, making it slightly heavier overall. Investors choose based on preference for purity versus durability.",
+      "The Krugerrand and Gold Eagle have the same purity: .9167 fine (22-karat gold alloyed with copper). Both coins contain 1 troy ounce of gold and weigh approximately 1.09 oz total. The main differences are their designs, issuing mints, and that the Eagle has a face value while the Krugerrand does not.",
   },
   {
-    question: "What affects Gold Buffalo premiums?",
+    question: "What affects Krugerrand premiums?",
     answer:
-      "Key premium drivers include: mint production capacity, dealer inventory levels, overall demand for physical gold, the coin's recognition and liquidity, and broader precious metals market conditions. During high demand periods, premiums typically increase.",
+      "Key premium drivers include: mint production capacity, dealer inventory levels, overall demand for physical gold, the coin's recognition and liquidity, and broader precious metals market conditions. Krugerrands often have lower premiums than other coins due to high production volumes.",
   },
 ];
 
@@ -79,9 +79,9 @@ export default function CoinSpecsPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "American Gold Buffalo Coin Specifications",
+    name: "Gold Krugerrand Coin Specifications",
     description:
-      "Complete technical specifications and investor facts for the 1 oz American Gold Buffalo coin.",
+      "Complete technical specifications and investor facts for the 1 oz Gold Krugerrand coin.",
     url: `${SITE_CONFIG.domain}/coin-specs`,
     publisher: {
       "@type": "Organization",
@@ -119,10 +119,10 @@ export default function CoinSpecsPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              <span className="gold-text">Gold Buffalo</span> Specifications
+              <span className="gold-text">Krugerrand</span> Specifications
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Technical details and investor-facing facts for the 1 oz American Gold Buffalo, America&apos;s purest gold bullion coin.
+              Technical details and investor-facing facts for the 1 oz Gold Krugerrand, the world&apos;s original gold bullion coin.
             </p>
           </div>
 
@@ -149,36 +149,36 @@ export default function CoinSpecsPage() {
             </div>
           </section>
 
-          {/* Purity Advantage */}
+          {/* Alloy Advantage */}
           <section className="card p-6 md:p-8 mb-10 bg-bullion-gold/5 border-bullion-gold/30">
             <h2 className="text-2xl font-display font-semibold text-white mb-4">
-              The .9999 Purity Advantage
+              The 22-Karat Alloy Advantage
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              At .9999 fineness (24-karat), the Gold Buffalo is the purest gold coin produced by the U.S. Mint.
+              At .9167 fineness (22-karat), the Krugerrand uses a copper alloy that provides significant practical benefits.
             </p>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start gap-3">
                 <span className="text-bullion-gold mt-1">•</span>
-                <span><strong className="text-white">Maximum gold content</strong>: Virtually 100% of the coin&apos;s weight is pure gold</span>
+                <span><strong className="text-white">Enhanced durability</strong>: The copper alloy makes Krugerrands more resistant to scratching and wear than pure 24-karat coins</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-bullion-gold mt-1">•</span>
-                <span><strong className="text-white">IRS compliance</strong>: Exceeds the .995 minimum fineness for Precious Metals IRAs</span>
+                <span><strong className="text-white">Full gold content</strong>: Despite the alloy, each coin contains exactly 1 troy ounce of pure gold</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-bullion-gold mt-1">•</span>
-                <span><strong className="text-white">Global recognition</strong>: Comparable purity to the Canadian Maple Leaf and other international 24-karat coins</span>
+                <span><strong className="text-white">IRS compliance</strong>: Krugerrands are specifically listed as acceptable for Precious Metals IRAs</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-bullion-gold mt-1">•</span>
-                <span><strong className="text-white">Simple valuation</strong>: Gold content equals coin weight, making spot price calculations straightforward</span>
+                <span><strong className="text-white">Distinctive color</strong>: The copper gives Krugerrands their characteristic orange-gold hue</span>
               </li>
             </ul>
             <p className="text-gray-400 text-sm mt-4">
-              Learn more about purity and composition at{" "}
+              Learn more about Krugerrand composition at{" "}
               <a
-                href="https://www.monex.com/knowledge/composition-purity-1-oz-gold-buffalo-coins/"
+                href="https://www.monex.com/gold-south-african-krugerrands-for-sale/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-bullion-gold hover:underline"
@@ -194,31 +194,31 @@ export default function CoinSpecsPage() {
               Legal Tender Status
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              The American Gold Buffalo carries a <strong className="text-white">$50 face value</strong> and is official United States legal tender. This government backing provides:
+              The Krugerrand is legal tender in South Africa, though uniquely it has <strong className="text-white">no fixed face value</strong>. Its legal tender value equals its gold content value.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">Authenticity Assurance</h3>
                 <p className="text-gray-400 text-sm">
-                  Produced by the U.S. Mint with strict quality controls and anti-counterfeiting measures.
+                  Produced by the South African Mint with strict quality controls and anti-counterfeiting measures.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">Government Guarantee</h3>
                 <p className="text-gray-400 text-sm">
-                  Weight and purity backed by the full faith of the United States government.
+                  Weight and purity backed by the South African government and Rand Refinery.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">Market Recognition</h3>
                 <p className="text-gray-400 text-sm">
-                  Widely recognized and accepted by dealers worldwide, supporting liquidity.
+                  The most recognized gold bullion coin worldwide, supporting exceptional liquidity.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">IRA Eligibility</h3>
                 <p className="text-gray-400 text-sm">
-                  Legal tender status is one requirement for Precious Metals IRA inclusion.
+                  Specifically listed in IRS guidelines as acceptable for Precious Metals IRAs.
                 </p>
               </div>
             </div>
@@ -230,16 +230,16 @@ export default function CoinSpecsPage() {
               IRA Eligibility Considerations
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              American Gold Buffalo coins qualify for inclusion in a Precious Metals IRA (Self-Directed IRA). Key considerations:
+              Gold Krugerrand coins qualify for inclusion in a Precious Metals IRA (Self-Directed IRA). Key considerations:
             </p>
             <ul className="space-y-3 text-gray-300 mb-4">
               <li className="flex items-start gap-3">
                 <span className="text-emerald-400">✓</span>
-                <span>Meets IRS purity requirement (.9999 exceeds .995 minimum)</span>
+                <span>Specifically listed as acceptable in IRS Publication 590</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-400">✓</span>
-                <span>Produced by an approved national mint (U.S. Mint)</span>
+                <span>Produced by an approved national mint (South African Mint)</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-400">✓</span>
@@ -263,13 +263,13 @@ export default function CoinSpecsPage() {
               Understanding Premium Drivers
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Gold Buffalo coins trade at a premium above the spot price of gold. Factors that influence premiums include:
+              Krugerrand coins trade at a premium above the spot price of gold. Factors that influence premiums include:
             </p>
             <div className="space-y-4">
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Minting Costs</h3>
                 <p className="text-gray-400 text-sm">
-                  U.S. Mint production, quality control, and distribution expenses.
+                  South African Mint production, quality control, and distribution expenses.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
@@ -281,7 +281,7 @@ export default function CoinSpecsPage() {
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Supply & Demand</h3>
                 <p className="text-gray-400 text-sm">
-                  Mint production capacity versus investor demand for physical gold.
+                  High Krugerrand production volumes typically result in lower premiums than scarcer coins.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
@@ -293,14 +293,14 @@ export default function CoinSpecsPage() {
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Product Recognition</h3>
                 <p className="text-gray-400 text-sm">
-                  The Buffalo&apos;s government backing and global recognition support competitive spreads.
+                  The Krugerrand&apos;s global recognition and liquidity support competitive spreads.
                 </p>
               </div>
             </div>
             <p className="text-gray-400 text-sm mt-4">
-              View current Gold Buffalo pricing at{" "}
+              View current Krugerrand pricing at{" "}
               <a
-                href="https://www.monex.com/gold-american-buffalo-price-charts/"
+                href="https://www.monex.com/gold-south-african-krugerrand-price-charts/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-bullion-gold hover:underline"
@@ -348,4 +348,3 @@ export default function CoinSpecsPage() {
     </>
   );
 }
-

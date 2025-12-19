@@ -10,7 +10,7 @@ import { SITE_CONFIG, getProductApiUrl, getSpotApiUrl } from "./siteConfig";
  * 
  * API Response shape (data[0]):
  * {
- *   "symbol": "AB",
+ *   "symbol": "KR",
  *   "baseCurrency": "USD",
  *   "last": 2700.0,
  *   "bid": 2680.0,
@@ -40,7 +40,7 @@ export interface ProductSpotSummary {
 
 /**
  * Fetches the current product spot price from Monex API
- * Uses symbol from SITE_CONFIG.productSymbol (AB = American Buffalo)
+ * Uses symbol from SITE_CONFIG.productSymbol (KR = Gold Krugerrand)
  * 
  * Uses cache: 'no-store' to ensure:
  * - Data is fetched fresh on each page load ONLY
@@ -81,7 +81,7 @@ export async function fetchProductSpot(): Promise<ProductSpotSummary | null> {
     } else if (json && typeof json === "object") {
       // Response is an object
       if (json[symbol]) {
-        // Keyed by symbol: { AB: { ... } }
+        // Keyed by symbol: { KR: { ... } }
         productData = json[symbol];
       } else if (json.data && Array.isArray(json.data)) {
         // Wrapped in data property: { data: [...] }

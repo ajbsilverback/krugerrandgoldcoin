@@ -57,14 +57,14 @@ function getMonexAnchorText(slug: string): string {
     "premiums-explained": "Monex gold market pricing information",
     "coin-comparison": "Monex guide to investing in gold",
     "storage-options": "Monex gold investment knowledge base",
-    "purity-advantages": "Monex Gold Buffalo product information",
+    "purity-advantages": "Monex Krugerrand product information",
     "liquidity-considerations": "Monex gold investment resources",
     "market-dynamics": "Monex live gold prices",
     "spreads-explained": "Monex gold price data",
     "authentication-guide": "Monex gold investing knowledge base",
     "ira-eligibility": "Monex gold IRA information",
     "portfolio-allocation": "Monex investing in gold resources",
-    "first-time-buyers-guide": "Monex Gold Buffalo products and pricing",
+    "first-time-buyers-guide": "Monex Krugerrand products and pricing",
     "tax-considerations": "Monex gold investment knowledge base",
   };
   return anchorTextMap[slug] || "Monex gold resources";
@@ -74,36 +74,36 @@ function getMonexAnchorText(slug: string): string {
 function generateAISummaryBullets(slug: string, title: string): string[] {
   const summaryMap: Record<string, string[]> = {
     "premiums-explained": [
-      "This article explains why Gold Buffalo coins have premiums over spot",
-      "Learn how premiums of 3-5% compare to other gold bullion coins",
+      "This article explains why Krugerrand coins have premiums over spot",
+      "Learn how premiums of 2-4% compare to other gold bullion coins",
       "Understand the factors that cause premium fluctuations",
       "Discover strategies to secure the best pricing when purchasing",
       "Compare total cost of ownership for different gold coin options",
     ],
     "coin-comparison": [
-      "This article compares Gold Buffalo, Gold Eagle, and Maple Leaf coins",
-      "Learn the key difference: .9999 purity (Buffalo) vs .9167 (Eagle)",
+      "This article compares Krugerrand, Gold Eagle, and Maple Leaf coins",
+      "Learn the key difference: .9167 purity (Krugerrand/Eagle) vs .9999 (Maple)",
       "Understand that all 1 oz coins contain exactly 1 oz of gold",
       "Discover which coin best fits different investment goals",
       "Get guidance on IRA eligibility for each coin type",
     ],
     "storage-options": [
-      "This article covers storage solutions for Gold Buffalo coins",
+      "This article covers storage solutions for Krugerrand coins",
       "Learn about home safes, safe deposit boxes, and vault options",
       "Understand IRA storage requirements at approved depositories",
       "Discover insurance considerations for your gold holdings",
-      "Get guidance on protecting .9999 fine gold from scratching",
+      "Get guidance on protecting your gold coin investment",
     ],
     "purity-advantages": [
-      "This article explains the significance of .9999 fine purity",
-      "Learn why the Buffalo was the U.S. Mint's first 24-karat coin",
+      "This article explains the Krugerrand's 22-karat composition",
+      "Learn why the copper alloy makes Krugerrands more durable",
       "Understand purity vs gold content (both contain 1 oz gold)",
-      "Discover when higher purity matters for investors",
-      "Compare Buffalo and Eagle for different use cases",
+      "Discover when durability matters for investors",
+      "Compare Krugerrand and Maple Leaf for different use cases",
     ],
     "liquidity-considerations": [
-      "This article explains liquidity dynamics for Gold Buffalo coins",
-      "Learn how U.S. Mint products ensure strong dealer demand",
+      "This article explains liquidity dynamics for Krugerrand coins",
+      "Learn how being the world's first bullion coin ensures strong dealer demand",
       "Understand typical sale timelines (1-2 business days)",
       "Discover strategies for efficient buying and selling",
       "Get guidance on documentation for smooth transactions",
@@ -116,35 +116,35 @@ function generateAISummaryBullets(slug: string, title: string): string[] {
       "Get context for interpreting gold price movements",
     ],
     "spreads-explained": [
-      "This article explains bid-ask spreads on Gold Buffalo coins",
-      "Learn why Gold Buffalo spreads are typically 2-4%",
+      "This article explains bid-ask spreads on Krugerrand coins",
+      "Learn why Krugerrand spreads are typically 2-4%",
       "Understand how spreads affect your total cost of ownership",
       "Discover strategies to minimize spread impact on returns",
       "Calculate your break-even point including spread costs",
     ],
     "authentication-guide": [
-      "This article covers authentication for Gold Buffalo coins",
-      "Learn the official specifications: 32.7mm diameter, 2.95mm thick",
+      "This article covers authentication for Krugerrand coins",
+      "Learn the official specifications: 32.77mm diameter, 2.84mm thick",
       "Understand professional authentication options (NGC, PCGS)",
-      "Discover visual verification techniques for U.S. Mint coins",
+      "Discover visual verification techniques for South African Mint coins",
       "Get guidance on avoiding counterfeits and red flags",
     ],
     "ira-eligibility": [
-      "This article explains Gold Buffalo IRA eligibility",
-      "Learn why .9999 purity exceeds IRS requirements",
+      "This article explains Krugerrand IRA eligibility",
+      "Learn why Krugerrands are specifically listed in IRS guidelines",
       "Understand custodian and depository requirements",
       "Discover the costs of IRA gold ownership",
       "Compare IRA ownership vs personal possession",
     ],
     "portfolio-allocation": [
-      "This article covers strategic allocation to Gold Buffalo coins",
+      "This article covers strategic allocation to Krugerrand coins",
       "Learn typical gold allocations (5-15% of portfolio)",
       "Understand physical gold vs ETF trade-offs",
       "Discover dollar-cost averaging vs lump-sum strategies",
       "Get guidance on balancing IRA and personal holdings",
     ],
     "first-time-buyers-guide": [
-      "This article guides first-time buyers through Gold Buffalo purchases",
+      "This article guides first-time buyers through Krugerrand purchases",
       "Learn how to evaluate and select reputable dealers",
       "Understand payment methods, settlement, and delivery",
       "Discover why dealer pricing varies and how to compare",
@@ -162,7 +162,7 @@ function generateAISummaryBullets(slug: string, title: string): string[] {
   return summaryMap[slug] || [
     `This article provides comprehensive coverage of ${title.toLowerCase()}`,
     "Learn key concepts and practical considerations for gold coin investors",
-    "Understand how this topic affects your Gold Buffalo investment strategy",
+    "Understand how this topic affects your Krugerrand investment strategy",
     "Get actionable guidance based on industry best practices",
     "Find answers to common questions in this area",
   ];
@@ -320,7 +320,7 @@ export default async function ResourcePage({ params }: Props) {
           {/* Internal Links */}
           <div className="mt-10 p-5 md:p-6 rounded-xl bg-bullion-darker/50 border border-bullion-gold/10">
             <p className="text-gray-400 mb-3 text-sm md:text-base">
-              Continue learning about American Gold Buffalo coins:
+              Continue learning about Gold Krugerrand coins:
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
               <Link
@@ -336,7 +336,7 @@ export default async function ResourcePage({ params }: Props) {
                 href="/where-to-buy"
                 className="inline-flex items-center text-bullion-gold hover:text-bullion-goldLight transition-colors"
               >
-                <span>Where to buy Gold Buffalos</span>
+                <span>Where to buy Krugerrands</span>
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -396,7 +396,7 @@ export default async function ResourcePage({ params }: Props) {
             <p className="text-gray-400 mb-6 max-w-xl mx-auto text-sm md:text-base">
               Explore more{" "}
               <Link href="/resources" className="text-bullion-gold hover:underline">
-                resources about Gold Buffalo coins
+                resources about Krugerrand coins
               </Link>{" "}
               or check{" "}
               <Link href="/live-gold-prices" className="text-bullion-gold hover:underline">

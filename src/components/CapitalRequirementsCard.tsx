@@ -7,14 +7,14 @@ interface CapitalRequirementsCardProps {
 }
 
 /**
- * Server Component - Displays the approximate capital required to purchase an American Gold Buffalo.
+ * Server Component - Displays the approximate capital required to purchase a Gold Krugerrand.
  * 
- * Uses American Buffalo (AB) pricing from Monex API.
+ * Uses Gold Krugerrand (KR) pricing from Monex API.
  * Can receive pre-fetched price data or will fetch its own if not provided.
  * NO polling, NO intervals - renders ONCE per page load only.
  */
 export default async function CapitalRequirementsCard({ priceData }: CapitalRequirementsCardProps = {}) {
-  // Use provided data or fetch AB (American Buffalo) if not available
+  // Use provided data or fetch KR (Gold Krugerrand) if not available
   const data = priceData !== undefined ? priceData : await fetchProductSpot();
 
   // Round to nearest $10 for display
@@ -38,8 +38,8 @@ export default async function CapitalRequirementsCard({ priceData }: CapitalRequ
       </h3>
       <p className="text-gray-400 text-sm text-center mb-6">
         {hasValidPrice
-          ? `Based on current Gold Buffalo (${SITE_CONFIG.productSymbol}) ask price:`
-          : "To purchase a single American Gold Buffalo:"}
+          ? `Based on current Gold Krugerrand (${SITE_CONFIG.productSymbol}) ask price:`
+          : "To purchase a single Gold Krugerrand:"}
       </p>
       <div className="text-center py-6 rounded-lg bg-bullion-gold/10 border border-bullion-gold/30">
         {hasValidPrice ? (
@@ -47,7 +47,7 @@ export default async function CapitalRequirementsCard({ priceData }: CapitalRequ
             <span className="text-4xl font-display font-bold gold-text">
               ≈ {roundToTen(data.ask)}
             </span>
-            <p className="text-gray-400 text-sm mt-2">per 1 oz Gold Buffalo</p>
+            <p className="text-gray-400 text-sm mt-2">per 1 oz Gold Krugerrand</p>
           </>
         ) : (
           <>

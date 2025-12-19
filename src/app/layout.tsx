@@ -7,20 +7,20 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.canonicalDomain),
   title: {
-    default: `${SITE_CONFIG.brandName} | 24-Karat Gold Bullion Coin Guide`,
+    default: `${SITE_CONFIG.brandName} | The Original Gold Bullion Coin`,
     template: `%s | ${SITE_CONFIG.brandName}`,
   },
   description:
-    "Discover everything about American Gold Buffalo coins, America's purest gold bullion coin. 24-karat, .9999 fine gold, U.S. Mint legal tender. Expert insights on pricing, premiums, and investing.",
+    "Discover everything about Gold Krugerrand coins, the world's first and most traded gold bullion coin. 22-karat, .9167 fine gold, minted by South African Mint since 1967. Expert insights on pricing, premiums, and investing.",
   keywords: [
-    "American Gold Buffalo",
-    "Gold Buffalo coin",
+    "Gold Krugerrand",
+    "Krugerrand coin",
     "1 oz gold coin",
-    "24 karat gold coin",
-    ".9999 fine gold",
-    "US Mint gold coin",
+    "22 karat gold coin",
+    ".9167 fine gold",
+    "South African gold coin",
     "gold bullion coin",
-    "buy Gold Buffalo",
+    "buy Krugerrand",
     "gold coin prices",
     "gold coin investment",
     "IRA eligible gold",
@@ -33,23 +33,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_CONFIG.domain,
     siteName: SITE_CONFIG.brandName,
-    title: `${SITE_CONFIG.brandName} | 24-Karat Gold Bullion Coin Guide`,
+    title: `${SITE_CONFIG.brandName} | The Original Gold Bullion Coin`,
     description:
-      "Discover everything about American Gold Buffalo coins, America's purest gold bullion coin. 24-karat, .9999 fine gold, U.S. Mint legal tender.",
+      "Discover everything about Gold Krugerrand coins, the world's first and most traded gold bullion coin. 22-karat, .9167 fine gold, minted by South African Mint.",
     images: [
       {
         url: `${SITE_CONFIG.domain}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "American Gold Buffalo Coin - Investment Education",
+        alt: "Gold Krugerrand Coin - Investment Education",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_CONFIG.brandName} | 24-Karat Gold Bullion Coin Guide`,
+    title: `${SITE_CONFIG.brandName} | The Original Gold Bullion Coin`,
     description:
-      "Discover everything about American Gold Buffalo coins, America's purest gold bullion coin. 24-karat, .9999 fine gold, U.S. Mint legal tender.",
+      "Discover everything about Gold Krugerrand coins, the world's first and most traded gold bullion coin. 22-karat, .9167 fine gold, minted by South African Mint.",
   },
   robots: {
     index: true,

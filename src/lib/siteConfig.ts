@@ -1,21 +1,21 @@
 /**
  * SITE CONFIGURATION - Single Source of Truth
  * 
- * Configuration for AmericanBuffaloGoldCoin.com
+ * Configuration for KrugerrandGoldCoin.com
  * 
  * ═══════════════════════════════════════════════════════════════════════════
  * GUARDRAILS - Do Not Modify Without Intentional Review
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * PROTECTED ELEMENTS:
- * - Pricing symbols (GBXSPOT vs AB)
+ * - Pricing symbols (GBXSPOT vs KR)
  * - Monex API endpoints
  * - Monex chart embed script
  * - Navigation IA
  * 
  * PRICING RULES:
  * - GBXSPOT: live gold spot price per troy ounce (market reference ONLY)
- * - AB: American Buffalo Gold Coin product pricing (product cards + charts ONLY)
+ * - KR: Gold Krugerrand product pricing (product cards + charts ONLY)
  * - Do NOT interchange these symbols
  * 
  * DEPLOYMENT:
@@ -24,8 +24,8 @@
  * - Vercel auto-deploys from main only
  * 
  * CONTENT:
- * - This site is strictly about American Gold Buffalo coins
- * - Focus on: minting, legal tender status, purity (.9999 fine), premiums, 
+ * - This site is strictly about Gold Krugerrand coins
+ * - Focus on: minting, legal tender status, purity (.9167 fine / 22K), premiums, 
  *   liquidity, IRA eligibility, obverse/reverse designs
  * 
  * ═══════════════════════════════════════════════════════════════════════════
@@ -37,20 +37,20 @@ export const SITE_CONFIG = {
   // ============================================================
   
   /** Primary domain with https:// prefix */
-  domain: "https://www.americanbuffalogoldcoin.com",
+  domain: "https://www.krugerrandgoldcoin.com",
   
   /** Canonical domain (usually same as domain) */
-  canonicalDomain: "https://www.americanbuffalogoldcoin.com",
+  canonicalDomain: "https://www.krugerrandgoldcoin.com",
   
   /** Brand name displayed in UI and metadata */
-  brandName: "American Buffalo Gold Coins",
+  brandName: "Gold Krugerrand Coins",
 
   // ============================================================
   // PRODUCT DEFINITION
   // ============================================================
   
   /** Primary product name */
-  primaryProduct: "American Gold Buffalo coins",
+  primaryProduct: "Gold Krugerrand coins",
   
   /** Metal type: "gold" | "silver" | "platinum" | "palladium" */
   metal: "gold",
@@ -70,9 +70,9 @@ export const SITE_CONFIG = {
   
   /** 
    * Product price symbol for Monex API
-   * AB = American Buffalo Gold Coin (product cards + charts ONLY)
+   * KR = Gold Krugerrand (product cards + charts ONLY)
    */
-  productSymbol: "AB",
+  productSymbol: "KR",
   
   /**
    * Spot index symbol for Monex API (raw metal spot price)
@@ -86,15 +86,15 @@ export const SITE_CONFIG = {
   
   /** Target audience description */
   angle:
-    "investors seeking U.S. Mint legal tender gold bullion with .9999 fine purity and strong liquidity",
+    "investors seeking the world's original gold bullion coin with proven liquidity and strong global recognition",
 
   /** Array of relevant Monex.com links for citations */
   monexLinks: [
-    "https://www.monex.com/american-buffalo-gold-coins-for-sale/",
-    "https://www.monex.com/gold-american-buffalo-price-charts/",
+    "https://www.monex.com/gold-south-african-krugerrands-for-sale/",
+    "https://www.monex.com/gold-south-african-krugerrand-price-charts/",
     "https://www.monex.com/gold-prices/",
     "https://www.monex.com/investing-in-gold/",
-    "https://www.monex.com/knowledge-base/gold-investing/gold-coins/american-gold-buffalo-coins/",
+    "https://www.monex.com/knowledge-base/gold-investing/gold-coins/gold-krugerrands/",
   ],
 } as const;
 

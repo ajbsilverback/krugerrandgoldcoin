@@ -17,8 +17,8 @@ export default function Footer() {
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Your trusted educational resource for {SITE_CONFIG.primaryProduct}. 
-              Helping investors understand America&apos;s purest gold bullion coin: 
-              24-karat, .9999 fine, U.S. Mint legal tender.
+              Helping investors understand the world&apos;s most recognized gold bullion coin: 
+              22-karat, .9167 fine, South African legal tender.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function Footer() {
                   href="/where-to-buy"
                   className="text-gray-400 hover:text-bullion-gold transition-colors text-sm"
                 >
-                  Where to Buy Gold Buffalos
+                  Where to Buy Gold Krugerrands
                 </Link>
               </li>
               <li>
@@ -94,7 +94,7 @@ export default function Footer() {
                   href="/resources/coin-comparison"
                   className="text-gray-400 hover:text-bullion-gold transition-colors text-sm"
                 >
-                  Buffalo vs Eagle Coins
+                  Krugerrand vs Eagle Coins
                 </Link>
               </li>
               <li>
